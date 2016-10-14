@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PokePudding</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" href="icon.png" />
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div>Letters Guessed:</div>
+      <div id="turnsleft">Turns Left: <span>XXXXXXXX</span></div>
+    </header>
+
+    <section id="lettersguessed"></section>
+    <section id="word"></section>
+    <p>press 'spacebar' for new game</p>
+    <section id="win"></section>
+
+    <section id="volumecontrol">Use number keys to control volume</section>
+
+    <input type="text">
+
+  </div>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+<audio controls="controls">
+  <source src="PokemonTVThemeSongFull.mp3" type="audio/mpeg">
+  <script>
+    var music = document.getElementsByTagName("audio")[0];
+    music.volume = 0.1;
+    music.loop = true;
+  </script>
+</audio>
+</html>
