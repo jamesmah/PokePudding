@@ -53,13 +53,8 @@ body.onkeydown = function (e) {
     e.preventDefault();
   }
   var music = document.getElementsByTagName("audio")[0];
-  if (e.keyCode > 48 && e.keyCode<=57) {
+  if (e.keyCode >= 48 && e.keyCode<=57) {
       music.volume = (e.keyCode - 48) / 10;
-      music.play();
-  }
-  else if (e.keyCode === 48 ) {
-      music.pause();
-      music.currentTime = 0;
   }
   setTimeout(function() {
     var char = String.fromCharCode(e.keyCode);

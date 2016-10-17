@@ -25,12 +25,14 @@
   </div>
   <script type="text/javascript" src="index.js"></script>
 </body>
-<audio controls="controls">
+<audio autoplay="autoplay">
   <source src="PokemonTVThemeSongFull.mp3" type="audio/mpeg">
   <script>
     var music = document.getElementsByTagName("audio")[0];
     music.volume = 0.1;
+    music.autoplay = "autoplay";
     music.loop = true;
   </script>
 </audio>
 </html>
+
